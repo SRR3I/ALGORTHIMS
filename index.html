@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CPU Prosess</title>
+    <meta name="description" content="Organization of CPU Processes" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <caption>
+        <strong>First Come First Serve</strong>
+      </caption>
+      <table border="1" id="customerTable">
+        <thead>
+          <tr>
+            <th>Process</th>
+            <th>
+              Arrival <br />
+              Time
+            </th>
+            <th>
+              Burst <br />
+              Time
+            </th>
+            <th>
+              Complete <br />
+              Time
+            </th>
+            <th>
+              Turnaround <br />
+              Time
+            </th>
+            <th>Waiting <br />Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="text" class="input-cell" /></td>
+            <td><input type="text" name="text" class="input-cell" /></td>
+            <td><input type="text" name="text" class="input-cell" /></td>
+            <td class="result-cell">DATA</td>
+            <td class="result-cell">DATA</td>
+            <td class="result-cell">DATA</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="addRow()">Add Row</button>
+      <button onclick="deleteRow()">Delete Row</button>
+      <button onclick="calculateFCFS()">Calculate FCFS</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
